@@ -1,5 +1,7 @@
 package me.shubhamthorat.rohan;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -32,6 +34,8 @@ public class HomeFragment extends Fragment {
 
     }
 
+
+
     public void flipperImage(int image) {
         ImageView imageView = new ImageView(getActivity());
         imageView.setBackgroundResource(image);
@@ -51,7 +55,8 @@ public class HomeFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         int image[] = {R.drawable.slide1, R.drawable.slide2,R.drawable.slide3,R.drawable.logo };
         v_flipper =  view.findViewById(R.id.v_flipper);
-
+        if(!v_flipper.isFlipping())
+            v_flipper.startFlipping();
         for (int i = 0; i < image.length; i++) {
             flipperImage(image[i]);
         }
@@ -67,5 +72,11 @@ public class HomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_home, container, false);
+    }
+
+    public void moreinfo (View view) {
+        Intent intent = new Intent(getActivity(), Moreinfo.class);
+        startActivity(intent);
+
     }
 }
