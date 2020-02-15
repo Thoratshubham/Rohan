@@ -20,7 +20,7 @@ import com.google.android.material.tabs.TabLayout;
 public class IndexActivity extends AppCompatActivity {
     PagerAdapter adapterViewPager;
     public static class MyPagerAdapter extends FragmentPagerAdapter {
-        private static int NUM_ITEMS = 3;
+        private static int NUM_ITEMS = 4;
 
         public MyPagerAdapter(FragmentManager fragmentManager) {
             super(fragmentManager);
@@ -40,6 +40,9 @@ public class IndexActivity extends AppCompatActivity {
                     return PaymentsFragment.newInstance();
 
                 case 2:
+                    return DocumentsFragment.newInstance();
+
+                case 3:
                     return ProfileFragment.newInstance();
                 default:
                     return null;
@@ -74,7 +77,8 @@ public class IndexActivity extends AppCompatActivity {
         vpPager.setPageTransformer(true, new CubeOutTransformer());
         tabLayout.getTabAt(0).setIcon(R.drawable.home);
         tabLayout.getTabAt(1).setIcon(R.drawable.payments);
-        tabLayout.getTabAt(2).setIcon(R.drawable.contactus);
+        tabLayout.getTabAt(2).setIcon(R.drawable.documents);
+        tabLayout.getTabAt(3).setIcon(R.drawable.profile);
     }
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_main, menu);

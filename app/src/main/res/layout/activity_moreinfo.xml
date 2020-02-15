@@ -12,9 +12,9 @@
         android:layout_width="184dp"
         android:layout_height="47dp"
         android:text="Lohngaon-Wagholi,Pune-412207"
-        android:textColor="@color/colorPrimary"
+        android:textColor="#000"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintHorizontal_bias="0.048"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/projectname" />
 
@@ -22,7 +22,7 @@
         android:id="@+id/projectname"
         android:layout_width="192dp"
         android:layout_height="36dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
         android:text="Rohan Abhilasha"
         android:textColor="@android:color/black"
         android:textSize="24sp"
@@ -38,8 +38,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
         android:text="Unit No."
-        app:layout_constraintBottom_toTopOf="@+id/textView24"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
@@ -49,8 +49,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
         android:text="Unit Type"
-        app:layout_constraintBottom_toTopOf="@+id/textView25"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView23" />
 
@@ -60,8 +60,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
         android:text="Balcony Area"
-        app:layout_constraintBottom_toTopOf="@+id/textView27"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView25" />
 
@@ -71,8 +71,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
         android:text="Utility Area"
-        app:layout_constraintBottom_toTopOf="@+id/textView28"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView26" />
 
@@ -82,8 +82,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
         android:text="Parking"
-        app:layout_constraintBottom_toTopOf="@+id/textView29"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView27" />
 
@@ -93,8 +93,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
         android:text="Floor No."
-        app:layout_constraintBottom_toTopOf="@+id/textView30"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView28" />
 
@@ -102,10 +102,12 @@
         android:id="@+id/textView30"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="34dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
         android:text="Total Ag Amt."
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView29" />
 
     <TextView
         android:id="@+id/textView25"
@@ -113,110 +115,108 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
         android:text="carpet_area"
-        app:layout_constraintBottom_toTopOf="@+id/textView26"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView24" />
-
-    <TextView
-        android:id="@+id/UnitNo."
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:text="201"
-        app:layout_constraintBottom_toTopOf="@+id/Unittype"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.521"
-        app:layout_constraintStart_toEndOf="@+id/textView23" />
 
     <TextView
         android:id="@+id/Balconyarea"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="12dp"
+        android:layout_marginTop="16dp"
         android:text="100 Sq.ft"
-        app:layout_constraintBottom_toTopOf="@+id/Utilityarea"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.47"
-        app:layout_constraintStart_toEndOf="@+id/textView26" />
+        app:layout_constraintStart_toEndOf="@+id/textView26"
+        app:layout_constraintTop_toBottomOf="@+id/Carpetarea" />
 
     <TextView
         android:id="@+id/Unittype"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:text="2BHK"
-        app:layout_constraintBottom_toTopOf="@+id/Carpetarea"
+        android:layout_marginStart="168dp"
+        android:layout_marginLeft="168dp"
+        android:layout_marginTop="8dp"
+        android:text="201"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.526"
-        app:layout_constraintStart_toEndOf="@+id/textView24" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView23"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/unittype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="2BHK"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView24"
+        app:layout_constraintTop_toBottomOf="@+id/Unittype" />
 
     <TextView
         android:id="@+id/Carpetarea"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
         android:text="468 Sq.ft"
-        app:layout_constraintBottom_toTopOf="@+id/Balconyarea"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.484"
-        app:layout_constraintStart_toEndOf="@+id/textView25" />
+        app:layout_constraintStart_toEndOf="@+id/textView25"
+        app:layout_constraintTop_toBottomOf="@+id/unittype" />
 
     <TextView
         android:id="@+id/Parking"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
         android:text="1"
-        app:layout_constraintBottom_toTopOf="@+id/Floorno"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toEndOf="@+id/textView28" />
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toEndOf="@+id/textView28"
+        app:layout_constraintTop_toBottomOf="@+id/Utilityarea" />
 
     <TextView
         android:id="@+id/Floorno"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
         android:text="2"
-        app:layout_constraintBottom_toTopOf="@+id/Totalagamt"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.484"
-        app:layout_constraintStart_toEndOf="@+id/textView29" />
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toEndOf="@+id/textView29"
+        app:layout_constraintTop_toBottomOf="@+id/Parking" />
 
     <TextView
         android:id="@+id/Totalagamt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
+        android:layout_marginTop="16dp"
         android:text="43,27,300 /-"
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.53"
-        app:layout_constraintStart_toEndOf="@+id/textView30" />
+        app:layout_constraintStart_toEndOf="@+id/textView30"
+        app:layout_constraintTop_toBottomOf="@+id/Floorno" />
 
     <TextView
         android:id="@+id/Utilityarea"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
         android:text="100 Sq.ft"
-        app:layout_constraintBottom_toTopOf="@+id/Parking"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toEndOf="@+id/textView27" />
+        app:layout_constraintStart_toEndOf="@+id/textView27"
+        app:layout_constraintTop_toBottomOf="@+id/Balconyarea" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="273dp"
         android:layout_height="170dp"
-        android:layout_marginEnd="80dp"
-        android:layout_marginRight="80dp"
-        android:layout_marginBottom="88dp"
+        android:layout_marginTop="26dp"
         android:foregroundGravity="center"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.853"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/logo" />
+        app:layout_constraintTop_toBottomOf="@+id/textView30"
+        app:srcCompat="@drawable/slide2" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,6 +13,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.ViewFlipper;
 
 public class HomeFragment extends Fragment {
@@ -53,13 +54,21 @@ public class HomeFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        int image[] = {R.drawable.slide1, R.drawable.slide2,R.drawable.slide3,R.drawable.logo };
-        v_flipper =  view.findViewById(R.id.v_flipper);
-        if(!v_flipper.isFlipping())
+        int image[] = {R.drawable.slide1, R.drawable.slide2, R.drawable.slide3, R.drawable.logo};
+        v_flipper = view.findViewById(R.id.v_flipper);
+        if (!v_flipper.isFlipping())
             v_flipper.startFlipping();
         for (int i = 0; i < image.length; i++) {
             flipperImage(image[i]);
         }
+      TextView textView = view.findViewById(R.id.textView4);
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), Moreinfo.class);
+       startActivity(intent);
+            }
+        });
     }
 
     @Override
@@ -74,9 +83,11 @@ public class HomeFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_home, container, false);
     }
 
-    public void moreinfo (View view) {
-        Intent intent = new Intent(getActivity(), Moreinfo.class);
-        startActivity(intent);
 
-    }
+
+//    public void Moreinfo (View view) {
+//        Intent intent = new Intent(getActivity(), Moreinfo.class);
+//        startActivity(intent);
+//
+//    }
 }
