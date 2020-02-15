@@ -54,7 +54,7 @@ public class HomeFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        int image[] = {R.drawable.slide1, R.drawable.slide2, R.drawable.slide3, R.drawable.logo};
+        int image[] = {R.drawable.slide1, R.drawable.slide2, R.drawable.slide3, R.drawable.slide4};
         v_flipper = view.findViewById(R.id.v_flipper);
         if (!v_flipper.isFlipping())
             v_flipper.startFlipping();

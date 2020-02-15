@@ -9,26 +9,26 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="184dp"
-        android:layout_height="47dp"
-        android:text="Lohngaon-Wagholi,Pune-412207"
-        android:textColor="#000"
+        android:layout_width="172dp"
+        android:layout_height="41dp"
+        android:text="Lohengaon-Wagholi,Pune-412207"
+        android:textColor="@color/colorAccent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/projectname" />
 
     <TextView
         android:id="@+id/projectname"
-        android:layout_width="192dp"
-        android:layout_height="36dp"
-        android:layout_marginTop="4dp"
+        android:layout_width="290dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="28dp"
         android:text="Rohan Abhilasha"
         android:textColor="@android:color/black"
-        android:textSize="24sp"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -38,7 +38,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="56dp"
         android:text="Unit No."
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
@@ -137,7 +137,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="168dp"
         android:layout_marginLeft="168dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="56dp"
         android:text="201"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -210,13 +210,23 @@
         app:layout_constraintTop_toBottomOf="@+id/Balconyarea" />
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="273dp"
-        android:layout_height="170dp"
-        android:layout_marginTop="26dp"
+        android:id="@+id/floorplan"
+        android:layout_width="255dp"
+        android:layout_height="195dp"
+        android:layout_marginTop="56dp"
         android:foregroundGravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView30"
-        app:srcCompat="@drawable/slide2" />
+        app:srcCompat="@drawable/floormoreinfo" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="57dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
