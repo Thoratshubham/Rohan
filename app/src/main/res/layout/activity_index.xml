@@ -9,8 +9,8 @@
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/sliding_tabs"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="410dp"
+        android:layout_height="68dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -19,8 +19,8 @@
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/vpPager"
-        android:layout_width="417dp"
-        android:layout_height="612dp"
+        android:layout_width="400dp"
+        android:layout_height="590dp"
         app:layout_constraintBottom_toTopOf="@+id/sliding_tabs"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -11,7 +11,7 @@
 
         android:id="@+id/profile_image"
         android:layout_width="150dp"
-        android:layout_height="213dp"
+        android:layout_height="197dp"
         android:foregroundGravity="center"
         android:src="@drawable/profileimg"
         app:civ_border_color="#FF000000"
@@ -22,8 +22,8 @@
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="245dp"
-        android:layout_height="52dp"
+        android:layout_width="248dp"
+        android:layout_height="36dp"
         android:gravity="center"
         android:text=" Mr. Shubham Thorat"
         android:textColor="@color/colorAccent"
@@ -34,23 +34,9 @@
         app:layout_constraintTop_toBottomOf="@+id/profile_image" />
 
     <TextView
-        android:id="@+id/textView6"
-        android:layout_width="173dp"
-        android:layout_height="38dp"
-        android:layout_marginEnd="116dp"
-        android:layout_marginRight="116dp"
-        android:gravity="center"
-        android:text="Welcome Back"
-        android:textColor="@color/colorAccent"
-        android:textSize="24sp"
-        app:fontFamily="sans-serif-condensed-medium"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
         android:id="@+id/textView8"
-        android:layout_width="251dp"
-        android:layout_height="52dp"
+        android:layout_width="258dp"
+        android:layout_height="37dp"
         android:gravity="center"
         android:text="Mrs. Mangesh Gaikwad"
         android:textColor="@color/colorAccent"
@@ -73,7 +59,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView5"
@@ -84,15 +70,41 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ViewFlipper
-        android:id="@+id/v_flipper"
-        android:layout_width="349dp"
-        android:layout_height="178dp"
-        android:layout_centerHorizontal="true"
+<!--    <ViewFlipper-->
+<!--        android:id="@+id/v_flipper"-->
+<!--        android:layout_width="349dp"-->
+<!--        android:layout_height="178dp"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textView11" />-->
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="151dp"
+        android:layout_height="23dp"
         android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="Here's your Floor Plan"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="369dp"
+        android:layout_height="222dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="36dp"
+        android:foregroundGravity="center"
+        android:src="@drawable/floor3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        app:layout_constraintVertical_bias="0.437"
+        app:srcCompat="@drawable/floor3" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
